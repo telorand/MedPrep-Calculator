@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MedPrep Calculator.jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MedPrep_Calculator_jar</output-path>
+    <root id="archive" name="MedPrepCalc.jar">
+      <element id="module-output" name="MedPrepCalc" />
+    </root>
+  </artifact>
+</component>
