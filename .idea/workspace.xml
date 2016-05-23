@@ -10,15 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a26ce95-3e12-408f-a8a6-f7bd1e850a2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MedPrep_Calculator_jar/MedPrepCalc.jar" afterPath="$PROJECT_DIR$/out/artifacts/MedPrep_Calculator_jar/MedPrepCalc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$1.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$2.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$3.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$4.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$5.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$6.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalcGUI.java" afterPath="$PROJECT_DIR$/src/CalcGUI.java" />
     </list>
     <ignored path="MedPrepCalc.iws" />
@@ -55,8 +46,8 @@
       <file leaf-file-name="CalcGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="365">
+              <caret line="297" column="76" selection-start-line="297" selection-start-column="76" selection-end-line="297" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#3325:3765" expanded="false" />
@@ -802,12 +793,12 @@
       <workItem from="1463752103201" duration="21678000" />
       <workItem from="1463779152611" duration="1042000" />
       <workItem from="1463792177746" duration="11196000" />
-      <workItem from="1463855760103" duration="16242000" />
+      <workItem from="1463855760103" duration="16931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80058000" />
+    <option name="totallyTimeSpent" value="80747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -970,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="365">
+          <caret line="297" column="76" selection-start-line="297" selection-start-column="76" selection-end-line="297" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#3325:3765" expanded="false" />

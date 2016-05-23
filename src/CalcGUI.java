@@ -295,7 +295,7 @@ public class CalcGUI extends JFrame{
         for (int i = 0; i < newBigD.length; i++){
             newBigD[i] = new BigDecimal(0);
         }
-        getBreakdown(awardedHours, qualityHours, qualityPoints, 1, newBigD); //TODO new BigDecimal causes NullPointer
+        getBreakdown(awardedHours, qualityHours, qualityPoints, 1, newBigD);
     }
 
     /**
