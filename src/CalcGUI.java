@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 /**
@@ -217,31 +216,6 @@ public class CalcGUI extends JFrame{
         return gpa;
     }
 
-    /**
-     * A method for ensuring that decimal values are rounded to a maximum of three places.
-     * This is the maximum that Banner can handle.
-     * Also used to ensure that double values don't go all squiffy (because they do).
-     * Five decimal places should be the maximum any conversion would use.
-     * @param inputNumber Double to be rounded.
-     * @return Returns a double value of the format 0.123
-     */
-    private double roundToThree(double inputNumber){
-        DecimalFormat df = new DecimalFormat("#.###"); //Banner can only handle 3 decimal places
-        df.setRoundingMode(RoundingMode.HALF_UP);
-        return Double.parseDouble(df.format(inputNumber));
-    }
-
-    private double roundToTwo(double inputNumber){
-        DecimalFormat df = new DecimalFormat("#.##");
-        df.setRoundingMode(RoundingMode.HALF_UP);
-        return Double.parseDouble(df.format(inputNumber));
-    }
-
-    private double roundToOne(double inputNumber){
-        DecimalFormat df = new DecimalFormat("#.#");
-        df.setRoundingMode(RoundingMode.HALF_UP);
-        return Double.parseDouble(df.format(inputNumber));
-    }
 
     private BigDecimal getPartialHoursTaken(BigDecimal qualityHours, int letterGrade) {
         BigDecimal hoursTaken;
@@ -304,7 +278,7 @@ public class CalcGUI extends JFrame{
      * @param qualityHours Total number of hours used to calculate GPA
      * @param qualityPoints Total number of grade points used to calculate GPA
      * @param safety Prevents getBreakdown from running too many times
-     * @param carryoverGrades
+     * @param carryoverGrades An array that contains BigDecimals for use if the method is re-run
      */
     private void getBreakdown(BigDecimal awardedHours, BigDecimal qualityHours, BigDecimal qualityPoints, int safety, BigDecimal[] carryoverGrades){
         //Make sure grades[] is initialized to correct values each time.
