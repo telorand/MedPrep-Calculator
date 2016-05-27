@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a26ce95-3e12-408f-a8a6-f7bd1e850a2b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MedNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MedPrep_Calculator_jar/MedPrepCalc.jar" afterPath="$PROJECT_DIR$/out/artifacts/MedPrep_Calculator_jar/MedPrepCalc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$1.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$2.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$3.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$4.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$5.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$6.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI.class" afterPath="$PROJECT_DIR$/out/production/MedPrepCalc/CalcGUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalcGUI.java" afterPath="$PROJECT_DIR$/src/CalcGUI.java" />
@@ -55,16 +50,92 @@
       <file leaf-file-name="CalcGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3718">
-              <caret line="280" column="96" selection-start-line="280" selection-start-column="96" selection-end-line="280" selection-end-column="96" />
+            <state relative-caret-position="537">
+              <caret line="414" column="96" selection-start-line="414" selection-start-column="96" selection-end-line="414" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#3293:3733" expanded="false" />
                 <element signature="class#3778:4008" expanded="false" />
                 <element signature="class#4051:4491" expanded="false" />
                 <element signature="class#4537:4768" expanded="false" />
-                <element signature="class#4812:5252" expanded="false" />
-                <element signature="method#getPartialHoursTaken#0;class#CalcGUI#0" expanded="false" />
+                <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+                <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+                <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+                <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Long.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Long.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#61416#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#9199#9200#0" expanded="false" />
+                <element signature="e#9245#9246#0" expanded="false" />
+                <element signature="e#10741#10742#0" expanded="false" />
+                <element signature="e#10787#10788#0" expanded="false" />
+                <element signature="e#12188#12189#0" expanded="false" />
+                <element signature="e#12234#12235#0" expanded="false" />
+                <element signature="e#15002#15003#0" expanded="false" />
+                <element signature="e#15048#15049#0" expanded="false" />
+                <element signature="e#35809#35810#0" expanded="false" />
+                <element signature="e#35843#35844#0" expanded="false" />
+                <element signature="e#36752#36753#0" expanded="false" />
+                <element signature="e#36786#36787#0" expanded="false" />
+                <element signature="e#36997#36998#0" expanded="false" />
+                <element signature="e#37032#37033#0" expanded="false" />
+                <element signature="e#37238#37239#0" expanded="false" />
+                <element signature="e#37271#37272#0" expanded="false" />
+                <element signature="e#37396#37397#0" expanded="false" />
+                <element signature="e#37424#37425#0" expanded="false" />
+                <element signature="e#37633#37634#0" expanded="false" />
+                <element signature="e#37668#37669#0" expanded="false" />
+                <element signature="e#37880#37881#0" expanded="false" />
+                <element signature="e#37916#37917#0" expanded="false" />
+                <element signature="e#38378#38379#0" expanded="false" />
+                <element signature="e#38416#38417#0" expanded="false" />
+                <element signature="e#38889#38890#0" expanded="false" />
+                <element signature="e#38932#38933#0" expanded="false" />
+                <element signature="e#39217#39218#0" expanded="false" />
+                <element signature="e#39269#39270#0" expanded="false" />
+                <element signature="e#41211#41212#0" expanded="false" />
+                <element signature="e#41251#41252#0" expanded="false" />
+                <element signature="e#46463#46464#0" expanded="false" />
+                <element signature="e#46524#46525#0" expanded="false" />
+                <element signature="e#47101#47102#0" expanded="false" />
+                <element signature="e#47157#47158#0" expanded="false" />
+                <element signature="e#47685#47686#0" expanded="false" />
+                <element signature="e#47745#47746#0" expanded="false" />
+                <element signature="e#56870#56871#0" expanded="false" />
+                <element signature="e#56928#56929#0" expanded="false" />
+                <element signature="e#58058#58059#0" expanded="false" />
+                <element signature="e#58116#58117#0" expanded="false" />
+                <element signature="e#60416#60417#0" expanded="false" />
+                <element signature="e#60444#60445#0" expanded="false" />
+                <element signature="e#60817#60818#0" expanded="false" />
+                <element signature="e#60854#60855#0" expanded="false" />
+                <element signature="e#61227#61228#0" expanded="false" />
+                <element signature="e#61264#61265#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+              <folding>
+                <element signature="e#2918#2919#0" expanded="false" />
+                <element signature="e#2950#2951#0" expanded="false" />
+                <element signature="e#3221#3222#0" expanded="false" />
+                <element signature="e#3299#3300#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,6 +163,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Calculator.java" />
         <option value="$PROJECT_DIR$/src/CalcGUI.form" />
+        <option value="$PROJECT_DIR$/src/MedNumber.java" />
         <option value="$PROJECT_DIR$/src/CalcGUI.java" />
       </list>
     </option>
@@ -112,8 +184,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="1298" />
+    <option name="height" value="992" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -140,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -176,7 +249,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -799,36 +871,42 @@
       <workItem from="1463779152611" duration="1042000" />
       <workItem from="1463792177746" duration="11196000" />
       <workItem from="1463855760103" duration="17022000" />
-      <workItem from="1463970156274" duration="366000" />
+      <workItem from="1463970156274" duration="633000" />
+      <workItem from="1464033566148" duration="110000" />
+      <workItem from="1464199188668" duration="4097000" />
+      <workItem from="1464294246828" duration="4019000" />
+      <workItem from="1464308364440" duration="50000" />
+      <workItem from="1464308551539" duration="10334000" />
+      <workItem from="1464354760217" duration="13125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81204000" />
+    <option name="totallyTimeSpent" value="113206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1298" height="992" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3092551" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30722892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1303648" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3476298" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49156627" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -837,6 +915,34 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39926404" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3476298" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="91" y="91" width="1418" height="1048" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39926404" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3092551" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12850972" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -851,7 +957,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="53" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalcGUI.java</url>
+          <line>303</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalcGUI.java</url>
+          <line>390</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -885,32 +1005,23 @@
             <element signature="class#3778:4008" expanded="false" />
             <element signature="class#4051:4491" expanded="false" />
             <element signature="class#4537:4768" expanded="false" />
-            <element signature="class#4812:5252" expanded="false" />
-            <element signature="method#getPartialHoursTaken#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="66">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
-            <element signature="class#4812:5252" expanded="false" />
-            <element signature="method#getPartialHoursTaken#0;class#CalcGUI#0" expanded="false" />
+            <element signature="e#2918#2919#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,37 +1031,6 @@
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
-            <element signature="class#4812:5252" expanded="false" />
-            <element signature="method#getPartialHoursTaken#0;class#CalcGUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1287" column="0" selection-start-line="1287" selection-start-column="0" selection-end-line="1287" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -964,8 +1044,343 @@
             <element signature="class#3778:4008" expanded="false" />
             <element signature="class#4051:4491" expanded="false" />
             <element signature="class#4537:4768" expanded="false" />
-            <element signature="class#4812:5252" expanded="false" />
-            <element signature="method#getPartialHoursTaken#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2918#2919#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3718">
+          <caret line="280" column="96" selection-start-line="280" selection-start-column="96" selection-end-line="280" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2918#2919#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3718">
+          <caret line="280" column="96" selection-start-line="280" selection-start-column="96" selection-end-line="280" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2918#2919#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MedNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <element signature="e#2918#2919#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3299#3300#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#61416#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9199#9200#0" expanded="false" />
+            <element signature="e#9245#9246#0" expanded="false" />
+            <element signature="e#10741#10742#0" expanded="false" />
+            <element signature="e#10787#10788#0" expanded="false" />
+            <element signature="e#12188#12189#0" expanded="false" />
+            <element signature="e#12234#12235#0" expanded="false" />
+            <element signature="e#15002#15003#0" expanded="false" />
+            <element signature="e#15048#15049#0" expanded="false" />
+            <element signature="e#35809#35810#0" expanded="false" />
+            <element signature="e#35843#35844#0" expanded="false" />
+            <element signature="e#36752#36753#0" expanded="false" />
+            <element signature="e#36786#36787#0" expanded="false" />
+            <element signature="e#36997#36998#0" expanded="false" />
+            <element signature="e#37032#37033#0" expanded="false" />
+            <element signature="e#37238#37239#0" expanded="false" />
+            <element signature="e#37271#37272#0" expanded="false" />
+            <element signature="e#37396#37397#0" expanded="false" />
+            <element signature="e#37424#37425#0" expanded="false" />
+            <element signature="e#37633#37634#0" expanded="false" />
+            <element signature="e#37668#37669#0" expanded="false" />
+            <element signature="e#37880#37881#0" expanded="false" />
+            <element signature="e#37916#37917#0" expanded="false" />
+            <element signature="e#38378#38379#0" expanded="false" />
+            <element signature="e#38416#38417#0" expanded="false" />
+            <element signature="e#38889#38890#0" expanded="false" />
+            <element signature="e#38932#38933#0" expanded="false" />
+            <element signature="e#39217#39218#0" expanded="false" />
+            <element signature="e#39269#39270#0" expanded="false" />
+            <element signature="e#41211#41212#0" expanded="false" />
+            <element signature="e#41251#41252#0" expanded="false" />
+            <element signature="e#46463#46464#0" expanded="false" />
+            <element signature="e#46524#46525#0" expanded="false" />
+            <element signature="e#47101#47102#0" expanded="false" />
+            <element signature="e#47157#47158#0" expanded="false" />
+            <element signature="e#47685#47686#0" expanded="false" />
+            <element signature="e#47745#47746#0" expanded="false" />
+            <element signature="e#56870#56871#0" expanded="false" />
+            <element signature="e#56928#56929#0" expanded="false" />
+            <element signature="e#58058#58059#0" expanded="false" />
+            <element signature="e#58116#58117#0" expanded="false" />
+            <element signature="e#60416#60417#0" expanded="false" />
+            <element signature="e#60444#60445#0" expanded="false" />
+            <element signature="e#60817#60818#0" expanded="false" />
+            <element signature="e#60854#60855#0" expanded="false" />
+            <element signature="e#61227#61228#0" expanded="false" />
+            <element signature="e#61264#61265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="4111" column="0" selection-start-line="4111" selection-start-column="0" selection-end-line="4111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="414" column="96" selection-start-line="414" selection-start-column="96" selection-end-line="414" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3293:3733" expanded="false" />
+            <element signature="class#3778:4008" expanded="false" />
+            <element signature="class#4051:4491" expanded="false" />
+            <element signature="class#4537:4768" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getHundredths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getThousandths#0;class#CalcGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
