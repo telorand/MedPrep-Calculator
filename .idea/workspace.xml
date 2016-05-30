@@ -9,9 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a26ce95-3e12-408f-a8a6-f7bd1e850a2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4a26ce95-3e12-408f-a8a6-f7bd1e850a2b" name="Default" comment="" />
     <ignored path="MedPrepCalc.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -820,12 +818,10 @@
       <workItem from="1464308551539" duration="10334000" />
       <workItem from="1464354760217" duration="13468000" />
       <workItem from="1464454069307" duration="26657000" />
-      <workItem from="1464576502266" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
