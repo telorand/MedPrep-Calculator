@@ -164,9 +164,7 @@ public class CalcGUI extends JFrame{
 
         //Logic here:
         grades = new BigDecimal[6]; //A's = 0, B's = 1, C's = 2, D's = 3, F's = 4, CR's = 5
-        for (int i = 0; i < grades.length; i++) {
-            grades[i] = new BigDecimal(0);
-        }
+        grades = initialize(grades);
         breakdown = "";
 
     }
@@ -199,8 +197,22 @@ public class CalcGUI extends JFrame{
 
         outputField.setText(null);
         breakdown = "";
-        getBreakdown(AWARD_HOURS,GPA_HOURS,GPA_POINTS);
+        getBreakdown();
         printBreakdown();
+    }
+
+    private BigDecimal[] initialize(BigDecimal[] arrayToZero){
+        for (int i = 0; i < grades.length; i++) {
+            arrayToZero[i] = new BigDecimal(0);
+        }
+        return arrayToZero;
+    }
+
+    private BigDecimal[] fixDecimal(BigDecimal[] arrayToFix){
+        for (int i = 0; i < arrayToFix.length; i++){
+            arrayToFix[i] = arrayToFix[i].setScale(3,RoundingMode.HALF_UP);
+        }
+        return arrayToFix;
     }
 
     /**
@@ -216,11 +228,15 @@ public class CalcGUI extends JFrame{
         return gpa;
     }
 
+    private BigDecimal getGPA(BigDecimal[] arrayContainingGrades){
+        return getGpaPoints(arrayContainingGrades).divide(getGpaHours(arrayContainingGrades),3,RoundingMode.HALF_UP);
+    }
+
     private BigDecimal getTenths(BigDecimal qualityHours, int letterGrade) {
         BigDecimal hoursTaken;
 
         if (qualityHours.compareTo(new BigDecimal(.1).setScale(3,RoundingMode.HALF_UP)) >= 0) {
-            grades[letterGrade] = grades[letterGrade].add(new BigDecimal(.1));
+            grades[letterGrade] = grades[letterGrade].add(new BigDecimal(.1).setScale(3,RoundingMode.HALF_UP));
             hoursTaken = new BigDecimal(.1);
         }
         else {
@@ -233,17 +249,17 @@ public class CalcGUI extends JFrame{
     private BigDecimal getHundredths(BigDecimal qualityHours, int letterGrade){
         BigDecimal hoursTaken;
         if (qualityHours.compareTo(new BigDecimal(.01).setScale(3,RoundingMode.HALF_UP)) >= 0) {
-            grades[letterGrade] = grades[letterGrade].add(new BigDecimal(.01));
+            grades[letterGrade] = grades[letterGrade].add(new BigDecimal(.01).setScale(3,RoundingMode.HALF_UP));
             hoursTaken = new BigDecimal(.01);
         }
         else {
-            hoursTaken = getThousandths(qualityHours,letterGrade);
+            hoursTaken = getThousandths(letterGrade);
         }
 
         return hoursTaken.setScale(3, RoundingMode.HALF_UP);
     }
 
-    private BigDecimal getThousandths(BigDecimal qualityHours, int letterGrade){
+    private BigDecimal getThousandths(int letterGrade){
         BigDecimal hoursTaken;
 
         grades[letterGrade] = grades[letterGrade].add(new BigDecimal(.001).setScale(3,RoundingMode.HALF_UP));
@@ -252,116 +268,143 @@ public class CalcGUI extends JFrame{
         return hoursTaken.setScale(3, RoundingMode.HALF_UP);
     }
 
-    //Overload of getBreakdown()
-    private void getBreakdown(BigDecimal awardedHours, BigDecimal qualityHours, BigDecimal qualityPoints){
+    private BigDecimal[] getCarryover(){
+        BigDecimal trueGPA = getGPA(GPA_HOURS,GPA_POINTS).setScale(3,RoundingMode.HALF_UP);
+        BigDecimal[] carryover = new BigDecimal[6];
+        for (int i = 0; i < carryover.length; i++){
+            carryover[i] = new BigDecimal(0);
+        }
+        //Number of F's required
+        carryover[F] = (GPA_HOURS.subtract(AWARD_HOURS).compareTo(BigDecimal.ZERO) > 0)? GPA_HOURS.subtract(AWARD_HOURS): BigDecimal.ZERO;
+
+        if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(A).setScale(3,RoundingMode.HALF_UP)) >= 0){
+            carryover[A] = carryover[F];
+        }
+        else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(B).setScale(3,RoundingMode.HALF_UP)) >= 0){
+            carryover[B] = carryover[F];
+        }
+        else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(C).setScale(3,RoundingMode.HALF_UP)) >= 0){
+            carryover[C] = carryover[F];
+        }
+        else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(D).setScale(3,RoundingMode.HALF_UP)) >= 0){
+            carryover[D] = carryover[F];
+        }
+
+        return carryover;
+    }
+
+    private BigDecimal getGpaHours(BigDecimal[] arrayToCombine){
+        return arrayToCombine[A].add(arrayToCombine[B]).add(arrayToCombine[C]).add(arrayToCombine[D]).add(arrayToCombine[F]).setScale(3,RoundingMode.HALF_UP);
+    }
+
+    private BigDecimal getGpaPoints(BigDecimal[] arrayToEvaluate){
+        BigDecimal as = new BigDecimal(A);
+        BigDecimal bs = new BigDecimal(B);
+        BigDecimal cs = new BigDecimal(C);
+        BigDecimal ds = new BigDecimal(D);
+        return arrayToEvaluate[A].multiply(as).add(arrayToEvaluate[B].multiply(bs)).add(arrayToEvaluate[C].multiply(cs))
+                .add(arrayToEvaluate[D].multiply(ds)).setScale(3,RoundingMode.HALF_UP);
+    }
+
+    private BigDecimal getAwardHours(BigDecimal[] arrayToEvaluate){
+        BigDecimal awarded = getGpaHours(arrayToEvaluate);
+        return awarded.subtract(arrayToEvaluate[F]).add(arrayToEvaluate[CR]).setScale(3,RoundingMode.HALF_UP);
+    }
+
+    /**
+     * Determines if computed hour breakdown matches original totals.
+     * This includes GPA points.
+     * @param arrayToCompare An array containing grades.
+     * @return Returns a boolean value based upon whether or not the new totals and original totals match.
+     */
+    private boolean totalsMatch(BigDecimal[] arrayToCompare){
+        return (getAwardHours(arrayToCompare).compareTo(AWARD_HOURS.setScale(3,RoundingMode.HALF_UP)) == 0 &&
+                getGpaHours(arrayToCompare).compareTo(GPA_HOURS.setScale(3,RoundingMode.HALF_UP)) == 0 &&
+                getGpaPoints(arrayToCompare).compareTo(GPA_POINTS.setScale(3,RoundingMode.HALF_UP)) == 0);
+    }
+
+    /**
+     * Overload of getBreakdown(int)
+     */
+    private void getBreakdown(){
         BigDecimal[] newBigD = new BigDecimal[6];
         for (int i = 0; i < newBigD.length; i++){
             newBigD[i] = new BigDecimal(0);
         }
-        getBreakdown(awardedHours, qualityHours, qualityPoints, 1, newBigD);
+        getBreakdown(1);
     }
 
     /**
      * Primary calculation logic for determining grade breakdown.
-     * @param awardedHours Total number of hours minus F's and plus CR's
-     * @param qualityHours Total number of hours used to calculate GPA
-     * @param qualityPoints Total number of grade points used to calculate GPA
      * @param safety Prevents getBreakdown from running too many times
-     * @param carryoverGrades An array that contains BigDecimals for use if the method is re-run
      */
-    private void getBreakdown(BigDecimal awardedHours, BigDecimal qualityHours, BigDecimal qualityPoints, int safety, BigDecimal[] carryoverGrades){
-        //Make sure grades[] is initialized to correct values each time.
-        System.arraycopy(carryoverGrades, 0, grades, 0, grades.length);
-
-        //Make sure GPA isn't too high.
-        if (getGPA(GPA_HOURS,GPA_POINTS).compareTo(MAXIMUM_SIU_GPA.setScale(3,RoundingMode.HALF_UP)) > 0){
-            breakdown = "GPA is too high." +
-                    "\nCheck the GPA Points or GPA Hours and try again.";
+    private void getBreakdown(int safety){
+        breakdown = "";
+        grades = initialize(grades);
+        if (safety > 3){
+            breakdown = "Error: Safety out of bounds.";
         }
         else {
-            //Do the stuff
-            for (int i = 4; i > 0; i--){ //Checks whole hours, but tries to go in half increments (most common)
-                BigDecimal increment = new BigDecimal(.1).setScale(1,RoundingMode.HALF_UP);
-                while (getGPA(qualityHours,qualityPoints).compareTo(new BigDecimal(i - 1).setScale(3,RoundingMode.HALF_UP)) > 0
-                        && qualityHours.compareTo(increment) >= 0) {
-                    grades[i] = grades[i].add(increment);
-                    qualityPoints = qualityPoints.subtract(new BigDecimal(i).multiply(increment));
-                    qualityHours = qualityHours.subtract(increment);
-                    awardedHours = awardedHours.subtract(increment);
-                }
-            }
-            for (int i = 4; i > 0; i--){ //Checks partial hours
-                while (getGPA(qualityHours,qualityPoints).compareTo(new BigDecimal(i-1)) > 0
-                        && qualityHours.compareTo(new BigDecimal(.001).setScale(3,RoundingMode.HALF_UP)) >= 0) {
-                    BigDecimal hoursTaken = getThousandths(qualityHours,i);
-                    qualityPoints = qualityPoints.subtract(hoursTaken.multiply(new BigDecimal(i)));
-                    qualityHours = qualityHours.subtract(hoursTaken);
-                    awardedHours = awardedHours.subtract(hoursTaken);
-                }
-            }
+            //Make sure GPA isn't too high.
+            if (getGPA(GPA_HOURS, GPA_POINTS).compareTo(MAXIMUM_SIU_GPA.setScale(3, RoundingMode.HALF_UP)) > 0) {
+                breakdown = "GPA is too high." +
+                        "\nCheck the GPA Points or GPA Hours and try again.";
+            } else {
+                //Do the stuff
+                //Check for F's up front
+                BigDecimal[] carryover = getCarryover();
+                System.arraycopy(carryover, 0, grades, 0, grades.length);
+                BigDecimal newGPA_Hours = GPA_HOURS.subtract(getGpaHours(carryover));
+                BigDecimal newGPA_Points = GPA_POINTS.subtract(getGpaPoints(carryover));
+                BigDecimal newAward_Hours = AWARD_HOURS.subtract(getAwardHours(carryover));
 
-            //Determine number of F's (first run only)
-            if (safety == 1) {
-                grades[F] = (qualityHours.compareTo(BigDecimal.ZERO) >= 0) ? grades[F].add(qualityHours) : BigDecimal.ZERO;
-            }
-            //Determine number of CR's
-            grades[CR] = (awardedHours.compareTo(BigDecimal.ZERO) >= 0) ? grades[CR].add(awardedHours) : BigDecimal.ZERO;
-
-            for (int i = 0; i < grades.length; i++){
-                grades[i] = grades[i].setScale(3,RoundingMode.HALF_UP);
-            }
-
-            //Check for the special F cases on the first run only
-            if (safety <= 1 &&
-                    GPA_HOURS.subtract(grades[F]).add(grades[CR]).compareTo(AWARD_HOURS.setScale(3,RoundingMode.HALF_UP)) > 0) {
-                BigDecimal trueGPA = getGPA(GPA_HOURS,GPA_POINTS);
-                BigDecimal[] carryover = new BigDecimal[6];
-                for (int i = 0; i < carryover.length; i++){
-                    carryover[i] = new BigDecimal(0);
+                if (getGPA(newGPA_Hours,newGPA_Points).compareTo(MAXIMUM_SIU_GPA) > 0){
+                    breakdown = "Awarded Hours might be too low.\nCheck your totals and try again.";
                 }
-                carryover[F] = GPA_HOURS.subtract(AWARD_HOURS); //Number of F's required
-                if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(A).setScale(3,RoundingMode.HALF_UP)) >= 0){
-                    carryover[A] = carryover[F];
-                }
-                else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(B).setScale(3,RoundingMode.HALF_UP)) >= 0){
-                    carryover[B] = carryover[F];
-                }
-                else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(C).setScale(3,RoundingMode.HALF_UP)) >= 0){
-                    carryover[C] = carryover[F];
-                }
-                else if (trueGPA.multiply(new BigDecimal(2)).compareTo(new BigDecimal(D).setScale(3,RoundingMode.HALF_UP)) >= 0){
-                    carryover[D] = carryover[F];
-                }
-                BigDecimal subtotal = new BigDecimal(0);
-                for (BigDecimal grade : carryover){
-                    subtotal = subtotal.add(grade);
-                }
-
-                //Check if AWARD_HOURS was too low to being with.
-                if (subtotal.compareTo(GPA_HOURS.setScale(3,RoundingMode.HALF_UP)) > 0){
-                    breakdown = "Awarded hours is too low." +
-                            "\nDouble check and try again.";
-                }
-                //Otherwise re-run getBreakdown() with new inputs.
                 else {
-                    BigDecimal newGPA_Hours =
-                            GPA_HOURS.subtract(carryover[A]).subtract(carryover[B]).subtract(carryover[C]).subtract(carryover[D]).subtract(carryover[F]);
-                    BigDecimal newGPA_Points = GPA_POINTS.subtract(carryover[A].multiply(new BigDecimal(A))).subtract(carryover[B].multiply(new BigDecimal(B)))
-                            .subtract(carryover[C].multiply(new BigDecimal(C))).subtract(carryover[D].multiply(new BigDecimal(D)));
-                    BigDecimal newAward_Hours =
-                            AWARD_HOURS.subtract(carryover[A]).subtract(carryover[B]).subtract(carryover[C]).subtract(carryover[D]);
-                    if (safety > 5) {
-                        breakdown = "Error: Safety out-of bounds.";
+
+                    for (int i = 4; i > 0; i--) {
+                        while (getGPA(newGPA_Hours, newGPA_Points).compareTo(new BigDecimal(i - 1).setScale(3, RoundingMode.HALF_UP).stripTrailingZeros()) > 0
+                                && newGPA_Hours.compareTo(new BigDecimal(.001).setScale(3, RoundingMode.HALF_UP)) >= 0) {
+                            //Check hour breakdown using tenths, hundredths, or thousandths
+                            BigDecimal hoursTaken = getTenths(newGPA_Hours, i);
+                            //Take out the hours and points you've added to grades[]
+                            newGPA_Points = newGPA_Points.subtract(hoursTaken.multiply(new BigDecimal(i)));
+                            newGPA_Hours = newGPA_Hours.subtract(hoursTaken);
+                            newAward_Hours = newAward_Hours.subtract(hoursTaken);
+                        }
                     }
-                    else {
-                        getBreakdown(newAward_Hours, newGPA_Hours, newGPA_Points, ++safety, carryover);
+
+                    if (safety <= 1) {
+                        grades[F] = (newGPA_Hours.compareTo(BigDecimal.ZERO) >= 0) ? grades[F].add(newGPA_Hours) : BigDecimal.ZERO;
+                    }
+                    //Determine number of CR's
+                    grades[CR] = (newAward_Hours.compareTo(BigDecimal.ZERO) >= 0) ? grades[CR].add(newAward_Hours) : BigDecimal.ZERO;
+
+                    grades = fixDecimal(grades);
+
+                    if (safety <= 2 && !totalsMatch(grades)) {
+                        getBreakdown(++safety);
+                    } else {
+                        if (!totalsMatch(grades) && !fallbackBreakdown(AWARD_HOURS,GPA_HOURS,GPA_POINTS)) {
+                            breakdown = "Error: Unable to determine grade breakdown.";
+                        }
                     }
                 }
             }
         }
     }
 
-    private void fallbackBreakdown(BigDecimal awardHours, BigDecimal gpaHours, BigDecimal gpaPoints){
+    /**
+     * Performs a simple, division-based breakdown of hours.
+     * This method is not always accurate, but it is a failsafe for unaccounted-for hour/point combinations.
+     * @param awardHours Hours received minus F's and plus CR's.
+     * @param gpaHours Hours received that carry grade point values.
+     * @param gpaPoints Grade points received.
+     * @return Returns a boolean value based upon whether or not the simple division was successful.
+     */
+    private boolean fallbackBreakdown(BigDecimal awardHours, BigDecimal gpaHours, BigDecimal gpaPoints){
+        grades = initialize(grades);
         for (int i = 4; i > 0; i--){
             if (getGPA(GPA_HOURS,GPA_POINTS).compareTo(new BigDecimal(i - 1).setScale(3, RoundingMode.HALF_UP)) >= 0){
                 grades[i] = gpaPoints.divide(new BigDecimal(i),3,RoundingMode.HALF_UP);
@@ -373,6 +416,7 @@ public class CalcGUI extends JFrame{
             //Determine number of CR's
             grades[CR] = (awardHours.compareTo(BigDecimal.ZERO) >= 0) ? grades[CR].add(awardHours) : BigDecimal.ZERO;
         }
+        return totalsMatch(grades);
     }
 
     /**
@@ -384,37 +428,22 @@ public class CalcGUI extends JFrame{
         }
         else {
             outputField.setText(null);
-            BigDecimal gpaPoints = grades[A].multiply(new BigDecimal(A)).add(grades[B].multiply(new BigDecimal(B)))
-                    .add(grades[C].multiply(new BigDecimal(C))).add(grades[D].multiply(new BigDecimal(D)));
-            BigDecimal gpaHours = grades[A].add(grades[B]).add(grades[C]).add(grades[D]).add(grades[F]);
-            BigDecimal gpa = getGPA(gpaHours, gpaPoints);
-            if (gpa.compareTo(getGPA(GPA_HOURS,GPA_POINTS).setScale(3,RoundingMode.HALF_UP)) != 0){
-                outputField.setText("Rounding error: Unable to parse grades.");
-            }
-            else {
-                //Convert quarter hours to semester hours if indicated.
-                for (int i = 0; i < grades.length; i++){
-                    grades[i] = grades[i].setScale(3,RoundingMode.HALF_UP).stripTrailingZeros();
+            grades = fixDecimal(grades);
+
+            //Convert quarter hours to semester hours if indicated.
+            if (qtrCheckBox.isSelected()) {
+                for (int i = 0; i < grades.length; i++) {
+                    grades[i] = grades[i].multiply(QTR_RATE).setScale(3, RoundingMode.HALF_UP);
                 }
-                if (qtrCheckBox.isSelected()) {
-                    for (int i = 0; i < grades.length; i++) {
-                        grades[i] = grades[i].multiply(QTR_RATE).setScale(3, RoundingMode.HALF_UP);
-                    }
-                }
-                if (grades[A].compareTo(BigDecimal.ZERO) > 0) //A's
-                    breakdown = breakdown.concat("Number of A's: " + grades[A].toPlainString() + "\n");
-                if (grades[B].compareTo(BigDecimal.ZERO) > 0) //B's
-                    breakdown = breakdown.concat("Number of B's: " + grades[B].toPlainString() + "\n");
-                if (grades[C].compareTo(BigDecimal.ZERO) > 0) //C's
-                    breakdown = breakdown.concat("Number of C's: " + grades[C].toPlainString() + "\n");
-                if (grades[D].compareTo(BigDecimal.ZERO) > 0) //D's
-                    breakdown = breakdown.concat("Number of D's: " + grades[D].toPlainString() + "\n");
-                if (grades[F].compareTo(BigDecimal.ZERO) > 0) //F's
-                    breakdown = breakdown.concat("Number of F's: " + grades[F].toPlainString() + "\n");
-                if (grades[CR].compareTo(BigDecimal.ZERO) > 0) //CR's
-                    breakdown = breakdown.concat("Number of CR's: " + grades[CR].toPlainString() + "\n");
-                outputField.setText("GPA: " + getGPA(gpaHours, gpaPoints) + "\n" + breakdown);
             }
+            String[] letterGrade = {"F","D","C","B","A","CR"};
+            for (int i = 4; i > -1; i--){
+                if (grades[i].compareTo(BigDecimal.ZERO) > 0)
+                    breakdown = breakdown.concat("Number of " + letterGrade[i] + "'s: " + grades[i].stripTrailingZeros().toPlainString() + "\n");
+            }
+            if (grades[CR].compareTo(BigDecimal.ZERO) > 0) //CR's
+                breakdown = breakdown.concat("Number of CR's: " + grades[CR].stripTrailingZeros().toPlainString() + "\n");
+            outputField.setText("GPA: " + getGPA(grades) + "\n" + breakdown);
         }
     }
 }
