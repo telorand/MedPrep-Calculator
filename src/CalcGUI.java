@@ -12,6 +12,8 @@ import java.text.NumberFormat;
  * Uses a greedy algorithm to determine grade breakdown.
  */
 public class CalcGUI extends JFrame{
+    private static final String TITLE_VERSION = "MedPrep Calculator v1.6";
+
     private JPanel mpPanel;
     private JFormattedTextField awardedHours;
     private JFormattedTextField qualityHours;
@@ -53,7 +55,7 @@ public class CalcGUI extends JFrame{
     private String breakdown;
 
     CalcGUI(){
-        super("MedPrep Calculator v1.5.2");
+        super(TITLE_VERSION);
         setContentPane(mpPanel);
         pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

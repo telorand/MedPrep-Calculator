@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a26ce95-3e12-408f-a8a6-f7bd1e850a2b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalcGUI.java" afterPath="$PROJECT_DIR$/src/CalcGUI.java" />
     </list>
     <ignored path="MedPrepCalc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,15 +47,15 @@
       <file leaf-file-name="CalcGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="265" column="42" selection-start-line="265" selection-start-column="42" selection-end-line="265" selection-end-column="42" />
+            <state relative-caret-position="-349">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-                <element signature="class#3293:3733" expanded="false" />
-                <element signature="class#3778:4008" expanded="false" />
-                <element signature="class#4051:4491" expanded="false" />
-                <element signature="class#4537:4768" expanded="false" />
+                <element signature="class#3355:3795" expanded="false" />
+                <element signature="class#3840:4070" expanded="false" />
+                <element signature="class#4113:4553" expanded="false" />
+                <element signature="class#4599:4830" expanded="false" />
                 <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
                 <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
                 <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -123,10 +124,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1942" />
-    <option name="height" value="1042" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1298" />
+    <option name="height" value="992" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -153,9 +154,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -821,14 +822,16 @@
       <workItem from="1464354760217" duration="13468000" />
       <workItem from="1464454069307" duration="26657000" />
       <workItem from="1464576502266" duration="266000" />
+      <workItem from="1464622418236" duration="40000" />
+      <workItem from="1464707836095" duration="238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140472000" />
+    <option name="totallyTimeSpent" value="140750000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-9" y="-9" width="1298" height="992" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -841,7 +844,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16144708" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16094771" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -903,13 +906,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CalcGUI.java</url>
-          <line>377</line>
+          <line>379</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CalcGUI.java</url>
-          <line>354</line>
+          <line>356</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
@@ -945,10 +948,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -990,10 +993,100 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
+            <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#fixDecimal#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getGPA#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGPA#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGPA#1;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getCarryover#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGpaHours#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGpaPoints#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getAwardHours#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#totalsMatch#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#totalsMatch#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getBreakdown#1;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getBreakdown#1;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#fallbackBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#fallbackBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#printBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#printBreakdown#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
+            <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#fixDecimal#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getGPA#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGPA#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGPA#1;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getTenths#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getCarryover#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGpaHours#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getGpaPoints#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getAwardHours#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#totalsMatch#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#totalsMatch#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#getBreakdown#1;class#CalcGUI#0" expanded="false" />
+            <element signature="method#getBreakdown#1;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#fallbackBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#fallbackBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="docComment;method#printBreakdown#0;class#CalcGUI#0" expanded="false" />
+            <element signature="method#printBreakdown#0;class#CalcGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1024,56 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32868">
           <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#61416#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#9199#9200#0" expanded="false" />
-            <element signature="e#9245#9246#0" expanded="false" />
-            <element signature="e#10741#10742#0" expanded="false" />
-            <element signature="e#10787#10788#0" expanded="false" />
-            <element signature="e#12188#12189#0" expanded="false" />
-            <element signature="e#12234#12235#0" expanded="false" />
-            <element signature="e#15002#15003#0" expanded="false" />
-            <element signature="e#15048#15049#0" expanded="false" />
-            <element signature="e#35809#35810#0" expanded="false" />
-            <element signature="e#35843#35844#0" expanded="false" />
-            <element signature="e#36752#36753#0" expanded="false" />
-            <element signature="e#36786#36787#0" expanded="false" />
-            <element signature="e#36997#36998#0" expanded="false" />
-            <element signature="e#37032#37033#0" expanded="false" />
-            <element signature="e#37238#37239#0" expanded="false" />
-            <element signature="e#37271#37272#0" expanded="false" />
-            <element signature="e#37396#37397#0" expanded="false" />
-            <element signature="e#37424#37425#0" expanded="false" />
-            <element signature="e#37633#37634#0" expanded="false" />
-            <element signature="e#37668#37669#0" expanded="false" />
-            <element signature="e#37880#37881#0" expanded="false" />
-            <element signature="e#37916#37917#0" expanded="false" />
-            <element signature="e#38378#38379#0" expanded="false" />
-            <element signature="e#38416#38417#0" expanded="false" />
-            <element signature="e#38889#38890#0" expanded="false" />
-            <element signature="e#38932#38933#0" expanded="false" />
-            <element signature="e#39217#39218#0" expanded="false" />
-            <element signature="e#39269#39270#0" expanded="false" />
-            <element signature="e#41211#41212#0" expanded="false" />
-            <element signature="e#41251#41252#0" expanded="false" />
-            <element signature="e#46463#46464#0" expanded="false" />
-            <element signature="e#46524#46525#0" expanded="false" />
-            <element signature="e#47101#47102#0" expanded="false" />
-            <element signature="e#47157#47158#0" expanded="false" />
-            <element signature="e#47685#47686#0" expanded="false" />
-            <element signature="e#47745#47746#0" expanded="false" />
-            <element signature="e#56870#56871#0" expanded="false" />
-            <element signature="e#56928#56929#0" expanded="false" />
-            <element signature="e#58058#58059#0" expanded="false" />
-            <element signature="e#58116#58117#0" expanded="false" />
-            <element signature="e#60416#60417#0" expanded="false" />
-            <element signature="e#60444#60445#0" expanded="false" />
-            <element signature="e#60817#60818#0" expanded="false" />
-            <element signature="e#60854#60855#0" expanded="false" />
-            <element signature="e#61227#61228#0" expanded="false" />
-            <element signature="e#61264#61265#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,10 +1136,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1139,10 +1182,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1185,10 +1228,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1231,10 +1274,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1277,10 +1320,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1322,10 +1365,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1367,10 +1410,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1412,10 +1455,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1457,10 +1500,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
@@ -1507,56 +1550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32868">
           <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#61416#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#9199#9200#0" expanded="false" />
-            <element signature="e#9245#9246#0" expanded="false" />
-            <element signature="e#10741#10742#0" expanded="false" />
-            <element signature="e#10787#10788#0" expanded="false" />
-            <element signature="e#12188#12189#0" expanded="false" />
-            <element signature="e#12234#12235#0" expanded="false" />
-            <element signature="e#15002#15003#0" expanded="false" />
-            <element signature="e#15048#15049#0" expanded="false" />
-            <element signature="e#35809#35810#0" expanded="false" />
-            <element signature="e#35843#35844#0" expanded="false" />
-            <element signature="e#36752#36753#0" expanded="false" />
-            <element signature="e#36786#36787#0" expanded="false" />
-            <element signature="e#36997#36998#0" expanded="false" />
-            <element signature="e#37032#37033#0" expanded="false" />
-            <element signature="e#37238#37239#0" expanded="false" />
-            <element signature="e#37271#37272#0" expanded="false" />
-            <element signature="e#37396#37397#0" expanded="false" />
-            <element signature="e#37424#37425#0" expanded="false" />
-            <element signature="e#37633#37634#0" expanded="false" />
-            <element signature="e#37668#37669#0" expanded="false" />
-            <element signature="e#37880#37881#0" expanded="false" />
-            <element signature="e#37916#37917#0" expanded="false" />
-            <element signature="e#38378#38379#0" expanded="false" />
-            <element signature="e#38416#38417#0" expanded="false" />
-            <element signature="e#38889#38890#0" expanded="false" />
-            <element signature="e#38932#38933#0" expanded="false" />
-            <element signature="e#39217#39218#0" expanded="false" />
-            <element signature="e#39269#39270#0" expanded="false" />
-            <element signature="e#41211#41212#0" expanded="false" />
-            <element signature="e#41251#41252#0" expanded="false" />
-            <element signature="e#46463#46464#0" expanded="false" />
-            <element signature="e#46524#46525#0" expanded="false" />
-            <element signature="e#47101#47102#0" expanded="false" />
-            <element signature="e#47157#47158#0" expanded="false" />
-            <element signature="e#47685#47686#0" expanded="false" />
-            <element signature="e#47745#47746#0" expanded="false" />
-            <element signature="e#56870#56871#0" expanded="false" />
-            <element signature="e#56928#56929#0" expanded="false" />
-            <element signature="e#58058#58059#0" expanded="false" />
-            <element signature="e#58116#58117#0" expanded="false" />
-            <element signature="e#60416#60417#0" expanded="false" />
-            <element signature="e#60444#60445#0" expanded="false" />
-            <element signature="e#60817#60818#0" expanded="false" />
-            <element signature="e#60854#60855#0" expanded="false" />
-            <element signature="e#61227#61228#0" expanded="false" />
-            <element signature="e#61264#61265#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1573,21 +1566,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalcGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="265" column="42" selection-start-line="265" selection-start-column="42" selection-end-line="265" selection-end-column="42" />
+        <state relative-caret-position="-349">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CalcGUI#0;class#CalcGUI#0" expanded="false" />
-            <element signature="class#3293:3733" expanded="false" />
-            <element signature="class#3778:4008" expanded="false" />
-            <element signature="class#4051:4491" expanded="false" />
-            <element signature="class#4537:4768" expanded="false" />
+            <element signature="class#3355:3795" expanded="false" />
+            <element signature="class#3840:4070" expanded="false" />
+            <element signature="class#4113:4553" expanded="false" />
+            <element signature="class#4599:4830" expanded="false" />
             <element signature="docComment;method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#calculateGo#0;class#CalcGUI#0" expanded="false" />
             <element signature="method#initialize#0;class#CalcGUI#0" expanded="false" />
